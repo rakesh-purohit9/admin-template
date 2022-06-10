@@ -5,18 +5,23 @@ export const Switch = ({
   offColor,
   onHandleColor,
   offHandleColor,
-  checked,
+  value,
   className,
   checkedIcon = <></>,
   uncheckedIcon = <></>,
+  onChange,
 }) => {
-  const [selected, setSelected] = React.useState(checked);
+  const [selected, setSelected] = React.useState(value);
+  const handleChange = (val) => {
+    setSelected(val);
+    onChange?.(val);
+  };
   return (
     <>
       <SwitchProvider
         className={className}
         checked={selected}
-        onChange={setSelected}
+        onChange={handleChange}
         onColor={onColor}
         offColor={offColor}
         onHandleColor={onHandleColor}

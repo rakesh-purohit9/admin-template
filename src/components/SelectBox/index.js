@@ -17,10 +17,22 @@ export const SelectBox = React.forwardRef(
       isSearchable = false,
       placeholderClassName = "",
       isMulti = false,
+      onChange,
+      value,
       ...restProps
     },
     ref
   ) => {
+    const [selectedVal, setSelectedVal] = React.useState(value);
+
+    const handleChange = (data) => {
+      setSelectedVal(data);
+      if (isMulti) {
+        onChange?.(data?.map((d) => d.value) || []);
+      } else {
+        onChange?.(data?.value);
+      }
+    };
     return (
       <>
         <Select
@@ -35,6 +47,8 @@ export const SelectBox = React.forwardRef(
           components={{
             IndicatorSeparator: () => null,
           }}
+          value={selectedVal}
+          onChange={handleChange}
           styles={{
             control: (provided) => ({
               ...provided,

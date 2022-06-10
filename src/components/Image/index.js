@@ -9,7 +9,7 @@ export const Image = ({
   return (
     <img
       className={`${className} common-image`}
-      src={require(`assets/images/${src}`)}
+      src={src}
       alt={alt}
       {...restProps}
       loading={"lazy"}

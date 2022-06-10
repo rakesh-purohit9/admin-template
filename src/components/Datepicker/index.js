@@ -3,44 +3,63 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 export function Datepicker({
-  children,
   placeholder = "Select date",
   className,
   value,
   dateFormat = "dd/MM/yyyy",
+  onChange,
   ...restProps
 }) {
-  const [selectedDate, setSelectedDate] = React.useState(value || new Date());
+  const [selectedDate, setSelectedDate] = React.useState(value);
+
+  const onDateChange = (value) => {
+    setSelectedDate(value);
+    onChange?.(value.toISOString());
+  };
+
   return (
     <div className={className}>
       <DatePicker
         dateFormat={dateFormat}
         placeholderText={placeholder}
         selected={selectedDate}
-        onChange={setSelectedDate}
+        onChange={onDateChange}
         {...restProps}
       />
     </div>
   );
 }
 
-function DatePickerRange({ startDate, endDate, ...restProps }) {
-  const [startDateValue, setStartDate] = React.useState(
-    startDate || new Date()
-  );
-  const [endDateValue, setEndDate] = React.useState(endDate || new Date());
-  const onChange = ([start, end]) => {
+function DatePickerRange({
+  startDate,
+  endDate,
+  placeholder = "Select range",
+  className,
+  dateFormat = "dd/MM/yyyy",
+  onChange,
+  ...restProps
+}) {
+  const [startDateValue, setStartDate] = React.useState(startDate);
+  const [endDateValue, setEndDate] = React.useState(endDate);
+
+  const onDateChange = ([start, end]) => {
     setStartDate(start);
     setEndDate(end);
+    onChange?.([start.toISOString(), end.toISOString()]);
   };
+
   return (
-    <Datepicker
-      startDate={startDateValue}
-      endDate={endDateValue}
-      selectsRange
-      onChange={onChange}
-      {...restProps}
-    />
+    <div className={className}>
+      <DatePicker
+        dateFormat={dateFormat}
+        placeholderText={placeholder}
+        startDate={startDateValue}
+        endDate={endDateValue}
+        onChange={onDateChange}
+        selectsRange
+        {...restProps}
+      />
+    </div>
   );
 }
 

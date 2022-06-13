@@ -15,11 +15,12 @@ import { Line } from "components/Line";
 const OrdersRestaurantPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate20 = () => navigate("/dashboardrestaurant");
-  const handleNavigate11 = () => navigate("/menu");
-  const handleNavigate12 = () => navigate("/customerreviews");
-  const handleNavigate13 = () => navigate("/settingsrestaurant");
-  const handleNavigate14 = () => navigate("/");
+  const handleNavigate33 = () => navigate("/dashboardrestaurant");
+  const handleNavigate24 = () => navigate("/menu");
+  const handleNavigate25 = () => navigate("/customerreviews");
+  const handleNavigate26 = () => navigate("/settingsrestaurant");
+  const handleNavigate27 = () => navigate("/");
+  const handleNavigate3 = () => navigate("/");
 
   return (
     <>
@@ -38,7 +39,7 @@ const OrdersRestaurantPage = () => {
                 </Text>
                 <Row
                   className="common-pointer bg-amber_600 items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate20}
+                  onClick={handleNavigate33}
                 >
                   <Image
                     src={"images/img_restaurantloca_10.svg"}
@@ -49,7 +50,7 @@ const OrdersRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate11}
+                  onClick={handleNavigate24}
                 >
                   <Image
                     src={"images/img_bill_10.svg"}
@@ -68,7 +69,7 @@ const OrdersRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate12}
+                  onClick={handleNavigate25}
                 >
                   <Image
                     src={"images/img_review_10.svg"}
@@ -79,7 +80,7 @@ const OrdersRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate13}
+                  onClick={handleNavigate26}
                 >
                   <Image
                     src={"images/img_setting_10.svg"}
@@ -94,7 +95,7 @@ const OrdersRestaurantPage = () => {
                     <Image
                       src={"images/img_maskgroup_31.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate14}
+                      onClick={handleNavigate27}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -116,7 +117,10 @@ const OrdersRestaurantPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate3}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>

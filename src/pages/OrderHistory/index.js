@@ -15,13 +15,14 @@ import { Line } from "components/Line";
 const OrderHistoryPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate62 = () => navigate("/");
-  const handleNavigate63 = () => navigate("/foodorder");
-  const handleNavigate52 = () => navigate("/favoritemenu");
-  const handleNavigate53 = () => navigate("/chat");
-  const handleNavigate54 = () => navigate("/bills");
-  const handleNavigate55 = () => navigate("/settingscustomer");
-  const handleNavigate26 = () => navigate("/dashboardrestaurant");
+  const handleNavigate75 = () => navigate("/");
+  const handleNavigate76 = () => navigate("/foodorder");
+  const handleNavigate65 = () => navigate("/favoritemenu");
+  const handleNavigate66 = () => navigate("/chat");
+  const handleNavigate67 = () => navigate("/bills");
+  const handleNavigate68 = () => navigate("/settingscustomer");
+  const handleNavigate39 = () => navigate("/dashboardrestaurant");
+  const handleNavigate6 = () => navigate("/dashboardrestaurant");
 
   const [inputvalue, setInputvalue] = React.useState("");
 
@@ -42,7 +43,7 @@ const OrderHistoryPage = () => {
                 </Text>
                 <Row
                   className="common-pointer items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate62}
+                  onClick={handleNavigate75}
                 >
                   <Image
                     src={"images/img_restaurantloca_4.svg"}
@@ -53,7 +54,7 @@ const OrderHistoryPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate63}
+                  onClick={handleNavigate76}
                 >
                   <Image
                     src={"images/img_deliveryscoote_4.svg"}
@@ -64,7 +65,7 @@ const OrderHistoryPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate52}
+                  onClick={handleNavigate65}
                 >
                   <Image
                     src={"images/img_review_4.svg"}
@@ -75,7 +76,7 @@ const OrderHistoryPage = () => {
                 </Row>
                 <Row
                   className="common-pointer bg-amber_600 items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate53}
+                  onClick={handleNavigate66}
                 >
                   <Image
                     src={"images/img_orderdiscussio_4.svg"}
@@ -94,7 +95,7 @@ const OrderHistoryPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate54}
+                  onClick={handleNavigate67}
                 >
                   <Image
                     src={"images/img_bill_4.svg"}
@@ -105,7 +106,7 @@ const OrderHistoryPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate55}
+                  onClick={handleNavigate68}
                 >
                   <Image
                     src={"images/img_setting_4.svg"}
@@ -120,7 +121,7 @@ const OrderHistoryPage = () => {
                     <Image
                       src={"images/img_maskgroup_23.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate26}
+                      onClick={handleNavigate39}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -142,7 +143,10 @@ const OrderHistoryPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate6}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -168,7 +172,7 @@ const OrderHistoryPage = () => {
                 {inputvalue?.length > 0 ? (
                   <Image
                     onClick={() => setInputvalue("")}
-                    src={"images/close1.svg"}
+                    src={"images/close.svg"}
                     className="absolute cursor-pointer h-[24px] right-[22px] lg:h-[14px] lg:right-[12px] xl:h-[17px] xl:right-[14px] 2xl:h-[19px] 2xl:right-[16px] 3xl:h-[22px] 3xl:right-[19px] my-[auto] inset-y-[0]"
                     alt="Vector"
                   />
@@ -221,12 +225,7 @@ const OrderHistoryPage = () => {
               </Column>
               <Column className="w-[100%]">
                 <Row className="bg-white_A700 items-center justify-start rounded-radius1 w-[100%]">
-                  <CheckBox
-                    className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                    inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] border-bw3 border-gray_300 border-solid h-[24px] lg:h-[14px] lg:w-[14px] rounded-radius4 w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                    name="square"
-                    label={""}
-                  ></CheckBox>
+                  <div className="border-bw3 border-gray_300 border-solid lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"></div>
                   <Image
                     src={"images/img_image_14.svg"}
                     className="lg:h-[42px] xl:h-[49px] 2xl:h-[55px] 3xl:h-[65px] h-[72px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[15px] my-[17px] lg:my-[9px] object-contain lg:w-[42px] xl:w-[48px] 2xl:w-[54px] 3xl:w-[64px] w-[72px]"
@@ -265,9 +264,11 @@ const OrderHistoryPage = () => {
                   </Text>
                   <Button className="bg-light_green_500_26 border border-light_green_500 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-light_green_500 w-[10%]">{`Completed`}</Button>
                   <Button className="border border-amber_600 border-solid font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] ml-[40px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] not-italic 2xl:pb-[11px] pb-[14.925px] 2xl:pt-[10px] pt-[14.485px] 3xl:py-[13px] lg:py-[8px] xl:py-[9px] rounded-radius16 shadow-bs2 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[8%]">{`Order Again`}</Button>
-                  <Button className="bg-transparent lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_dots_2.svg"}
+                    className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                    alt="Dots"
+                  />
                 </Row>
                 <Stack className="lg:h-[310px] xl:h-[354px] 2xl:h-[398px] 3xl:h-[478px] h-[530px] w-[100%]">
                   <Stack className="absolute bottom-[1%] lg:h-[308px] xl:h-[352px] 2xl:h-[396px] 3xl:h-[475px] h-[527px] inset-x-[0] top-[0] w-[100%]">
@@ -275,12 +276,7 @@ const OrderHistoryPage = () => {
                       <Stack className="absolute lg:h-[308px] xl:h-[352px] 2xl:h-[396px] 3xl:h-[475px] h-[527px] inset-[0] w-[100%]">
                         <Stack className="absolute lg:h-[308px] xl:h-[352px] 2xl:h-[396px] 3xl:h-[475px] h-[527px] inset-[0] w-[100%]">
                           <Row className="absolute bg-white_A700 items-center justify-start rounded-radius1 top-[0] w-[100%]">
-                            <CheckBox
-                              className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                              inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] border-bw3 border-gray_300 border-solid h-[24px] lg:h-[14px] lg:w-[14px] rounded-radius4 w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                              name="square"
-                              label={""}
-                            ></CheckBox>
+                            <div className="border-bw3 border-gray_300 border-solid lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"></div>
                             <Image
                               src={"images/img_image_15.svg"}
                               className="lg:h-[42px] xl:h-[49px] 2xl:h-[55px] 3xl:h-[65px] h-[72px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[15px] my-[17px] lg:my-[9px] object-contain lg:w-[42px] xl:w-[48px] 2xl:w-[54px] 3xl:w-[64px] w-[72px]"
@@ -319,9 +315,11 @@ const OrderHistoryPage = () => {
                             </Text>
                             <Button className="bg-amber_600_19 border border-amber_600 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[10%]">{`Delivering`}</Button>
                             <Button className="border border-amber_600 border-solid font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] ml-[40px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] not-italic 2xl:pb-[11px] pb-[14.925px] 2xl:pt-[10px] pt-[14.485px] 3xl:py-[13px] lg:py-[8px] xl:py-[9px] rounded-radius16 shadow-bs2 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[8%]">{`Order Again`}</Button>
-                            <Button className="bg-transparent lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]">
-                              {""}
-                            </Button>
+                            <Image
+                              src={"images/img_dots_3.svg"}
+                              className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                              alt="Dots"
+                            />
                           </Row>
                           <Image
                             src={"images/img_line_1.svg"}
@@ -330,12 +328,11 @@ const OrderHistoryPage = () => {
                           />
                         </Stack>
                         <Row className="absolute bg-white_A700 items-center justify-start rounded-radius1 top-[20%] w-[100%]">
-                          <CheckBox
-                            className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                            inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] h-[24px] lg:h-[14px] lg:w-[14px] w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                            name="icChecked"
-                            label={""}
-                          ></CheckBox>
+                          <Image
+                            src={"images/img_icchecked.svg"}
+                            className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                            alt="icChecked"
+                          />
                           <Image
                             src={"images/img_image_16.svg"}
                             className="lg:h-[42px] xl:h-[49px] 2xl:h-[55px] 3xl:h-[65px] h-[72px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[15px] my-[17px] lg:my-[9px] object-contain lg:w-[42px] xl:w-[48px] 2xl:w-[54px] 3xl:w-[64px] w-[72px]"
@@ -374,18 +371,15 @@ const OrderHistoryPage = () => {
                           </Text>
                           <Button className="bg-light_green_500_26 border border-light_green_500 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-light_green_500 w-[10%]">{`Completed`}</Button>
                           <Button className="border border-amber_600 border-solid font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] ml-[40px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] not-italic 2xl:pb-[11px] pb-[14.925px] 2xl:pt-[10px] pt-[14.485px] 3xl:py-[13px] lg:py-[8px] xl:py-[9px] rounded-radius16 shadow-bs2 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[8%]">{`Order Again`}</Button>
-                          <Button className="bg-transparent lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]">
-                            {""}
-                          </Button>
+                          <Image
+                            src={"images/img_dots_4.svg"}
+                            className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                            alt="Dots"
+                          />
                         </Row>
                       </Stack>
                       <Row className="absolute bg-white_A700 inset-x-[0] inset-y-[40%] items-center justify-start rounded-radius1 w-[100%]">
-                        <CheckBox
-                          className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                          inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] border-bw3 border-gray_300 border-solid h-[24px] lg:h-[14px] lg:w-[14px] rounded-radius4 w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                          name="square"
-                          label={""}
-                        ></CheckBox>
+                        <div className="border-bw3 border-gray_300 border-solid lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"></div>
                         <Image
                           src={"images/img_image_17.svg"}
                           className="lg:h-[42px] xl:h-[49px] 2xl:h-[55px] 3xl:h-[65px] h-[72px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[15px] my-[17px] lg:my-[9px] object-contain lg:w-[42px] xl:w-[48px] 2xl:w-[54px] 3xl:w-[64px] w-[72px]"
@@ -424,18 +418,19 @@ const OrderHistoryPage = () => {
                         </Text>
                         <Button className="bg-light_green_500_26 border border-light_green_500 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-light_green_500 w-[10%]">{`Completed`}</Button>
                         <Button className="border border-amber_600 border-solid font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] ml-[40px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] not-italic 2xl:pb-[11px] pb-[14.925px] 2xl:pt-[10px] pt-[14.485px] 3xl:py-[13px] lg:py-[8px] xl:py-[9px] rounded-radius16 shadow-bs2 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[8%]">{`Order Again`}</Button>
-                        <Button className="bg-transparent lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]">
-                          {""}
-                        </Button>
+                        <Image
+                          src={"images/img_dots_5.svg"}
+                          className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                          alt="Dots"
+                        />
                       </Row>
                     </Stack>
                     <Row className="absolute bg-white_A700 bottom-[20%] items-center justify-start rounded-radius1 w-[100%]">
-                      <CheckBox
-                        className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                        inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] h-[24px] lg:h-[14px] lg:w-[14px] w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                        name="icChecked"
-                        label={""}
-                      ></CheckBox>
+                      <Image
+                        src={"images/img_icchecked_1.svg"}
+                        className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                        alt="icChecked"
+                      />
                       <Image
                         src={"images/img_image_18.svg"}
                         className="lg:h-[42px] xl:h-[49px] 2xl:h-[55px] 3xl:h-[65px] h-[72px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[15px] my-[17px] lg:my-[9px] object-contain lg:w-[42px] xl:w-[48px] 2xl:w-[54px] 3xl:w-[64px] w-[72px]"
@@ -474,18 +469,15 @@ const OrderHistoryPage = () => {
                       </Text>
                       <Button className="bg-amber_600_19 border border-amber_600 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[10%]">{`Delivering`}</Button>
                       <Button className="border border-amber_600 border-solid font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] ml-[40px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] not-italic 2xl:pb-[11px] pb-[14.925px] 2xl:pt-[10px] pt-[14.485px] 3xl:py-[13px] lg:py-[8px] xl:py-[9px] rounded-radius16 shadow-bs2 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[8%]">{`Order Again`}</Button>
-                      <Button className="bg-transparent lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]">
-                        {""}
-                      </Button>
+                      <Image
+                        src={"images/img_dots_6.svg"}
+                        className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                        alt="Dots"
+                      />
                     </Row>
                   </Stack>
                   <Row className="absolute bg-white_A700 bottom-[0] items-center justify-start rounded-radius1 w-[100%]">
-                    <CheckBox
-                      className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                      inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] border-bw3 border-gray_300 border-solid h-[24px] lg:h-[14px] lg:w-[14px] rounded-radius4 w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                      name="square"
-                      label={""}
-                    ></CheckBox>
+                    <div className="border-bw3 border-gray_300 border-solid lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"></div>
                     <Image
                       src={"images/img_image_19.svg"}
                       className="lg:h-[42px] xl:h-[49px] 2xl:h-[55px] 3xl:h-[65px] h-[72px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[15px] my-[17px] lg:my-[9px] object-contain lg:w-[42px] xl:w-[48px] 2xl:w-[54px] 3xl:w-[64px] w-[72px]"
@@ -524,9 +516,11 @@ const OrderHistoryPage = () => {
                     </Text>
                     <Button className="bg-red_A200_19 border border-red_400 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-red_400 w-[10%]">{`Canceled`}</Button>
                     <Button className="border border-amber_600 border-solid font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] ml-[40px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] not-italic 2xl:pb-[11px] pb-[14.925px] 2xl:pt-[10px] pt-[14.485px] 3xl:py-[13px] lg:py-[8px] xl:py-[9px] rounded-radius16 shadow-bs2 text-amber_600 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[8%]">{`Order Again`}</Button>
-                    <Button className="bg-transparent lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]">
-                      {""}
-                    </Button>
+                    <Image
+                      src={"images/img_dots_7.svg"}
+                      className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[32px] xl:ml-[36px] 2xl:ml-[41px] 3xl:ml-[49px] ml-[55px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                      alt="Dots"
+                    />
                   </Row>
                 </Stack>
               </Column>
@@ -552,15 +546,19 @@ const OrderHistoryPage = () => {
                   </span>
                 </Text>
                 <Row className="items-center justify-between w-[20%]">
-                  <Button className="bg-transparent lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_chevrondown_6.svg"}
+                    className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                    alt="chevrondown"
+                  />
                   <Button className="bg-amber_600 font-normal lg:h-[30px] xl:h-[34px] 2xl:h-[38px] 3xl:h-[46px] h-[50px] leading-lh my-[1px] not-italic 3xl:pb-[10px] pb-[12px] lg:pb-[7px] xl:pb-[8px] 2xl:pb-[9px] lg:pl-[12px] xl:pl-[14px] 2xl:pl-[16px] 3xl:pl-[19px] pl-[22px] pt-[11px] lg:pt-[6px] xl:pt-[7px] 2xl:pt-[8px] 3xl:pt-[9px] rounded-radius16 text-amber_600 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left lg:w-[29px] xl:w-[33px] 2xl:w-[37px] 3xl:w-[45px] w-[50px]">{`1`}</Button>
                   <Button className="bg-amber_600 font-normal lg:h-[30px] xl:h-[35px] 2xl:h-[39px] 3xl:h-[46px] h-[51px] leading-lh not-italic lg:pl-[11px] xl:pl-[13px] 2xl:pl-[15px] 3xl:pl-[18px] pl-[20px] 3xl:py-[10px] py-[12px] lg:py-[7px] xl:py-[8px] 2xl:py-[9px] rounded-radius16 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 lg:w-[29px] xl:w-[34px] 2xl:w-[38px] 3xl:w-[45px] w-[51px]">{`2`}</Button>
                   <Button className="bg-deep_orange_400_19 font-normal lg:h-[30px] xl:h-[35px] 2xl:h-[39px] 3xl:h-[46px] h-[51px] leading-lh not-italic lg:pl-[11px] xl:pl-[13px] 2xl:pl-[15px] 3xl:pl-[18px] pl-[20px] 3xl:py-[10px] py-[12px] lg:py-[7px] xl:py-[8px] 2xl:py-[9px] rounded-radius16 text-amber_600 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left lg:w-[29px] xl:w-[34px] 2xl:w-[38px] 3xl:w-[45px] w-[51px]">{`3`}</Button>
-                  <Button className="bg-transparent lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_chevrondown_7.svg"}
+                    className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                    alt="chevrondown"
+                  />
                 </Row>
               </Row>
             </Column>

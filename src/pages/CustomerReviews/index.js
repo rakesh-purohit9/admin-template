@@ -24,11 +24,12 @@ import { RatingBar } from "components/RatingBar";
 const CustomerReviewsPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate15 = () => navigate("/dashboardrestaurant");
-  const handleNavigate5 = () => navigate("/menu");
-  const handleNavigate6 = () => navigate("/ordersrestaurant");
-  const handleNavigate7 = () => navigate("/settingsrestaurant");
-  const handleNavigate8 = () => navigate("/");
+  const handleNavigate28 = () => navigate("/dashboardrestaurant");
+  const handleNavigate18 = () => navigate("/menu");
+  const handleNavigate19 = () => navigate("/ordersrestaurant");
+  const handleNavigate20 = () => navigate("/settingsrestaurant");
+  const handleNavigate21 = () => navigate("/");
+  const handleNavigate4 = () => navigate("/");
 
   const [inputvalue, setInputvalue] = React.useState("");
 
@@ -49,7 +50,7 @@ const CustomerReviewsPage = () => {
                 </Text>
                 <Row
                   className="common-pointer bg-amber_600 items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate15}
+                  onClick={handleNavigate28}
                 >
                   <Image
                     src={"images/img_restaurantloca_11.svg"}
@@ -60,7 +61,7 @@ const CustomerReviewsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate5}
+                  onClick={handleNavigate18}
                 >
                   <Image
                     src={"images/img_bill_11.svg"}
@@ -71,7 +72,7 @@ const CustomerReviewsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate6}
+                  onClick={handleNavigate19}
                 >
                   <Image
                     src={"images/img_deliveryscoote_11.svg"}
@@ -90,7 +91,7 @@ const CustomerReviewsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate7}
+                  onClick={handleNavigate20}
                 >
                   <Image
                     src={"images/img_setting_11.svg"}
@@ -105,7 +106,7 @@ const CustomerReviewsPage = () => {
                     <Image
                       src={"images/img_maskgroup_34.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate8}
+                      onClick={handleNavigate21}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -127,7 +128,10 @@ const CustomerReviewsPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate4}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -165,7 +169,7 @@ const CustomerReviewsPage = () => {
                       <BarChart data={BarData}>
                         <RechartsTooltip />
                         <RechartsLegend />
-                        <Bar dataKey="c0" fill="#ff8080" />
+                        <Bar dataKey="c0" fill="#99ff33" />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -216,8 +220,8 @@ const CustomerReviewsPage = () => {
                         <BarChart data={BarData1}>
                           <RechartsTooltip />
                           <RechartsLegend />
-                          <Bar dataKey="c0" fill="#4da6ff" />
-                          <Bar dataKey="c1" fill="#66ffff" />
+                          <Bar dataKey="c0" fill="#bbbb77" />
+                          <Bar dataKey="c1" fill="#b3b3ff" />
                         </BarChart>
                       </ResponsiveContainer>
                     </div>
@@ -255,8 +259,8 @@ const CustomerReviewsPage = () => {
                     {inputvalue?.length > 0 ? (
                       <Image
                         onClick={() => setInputvalue("")}
-                        src={"images/close4.svg"}
-                        className="absolute cursor-pointer h-[20px] right-[22px] lg:h-[12px] lg:right-[12px] xl:h-[14px] xl:right-[14px] 2xl:h-[16px] 2xl:right-[16px] 3xl:h-[19px] 3xl:right-[19px] my-[auto] inset-y-[0]"
+                        src={"images/close3.svg"}
+                        className="absolute cursor-pointer h-[24px] right-[22px] lg:h-[14px] lg:right-[12px] xl:h-[17px] xl:right-[14px] 2xl:h-[19px] 2xl:right-[16px] 3xl:h-[22px] 3xl:right-[19px] my-[auto] inset-y-[0]"
                         alt="Vector"
                       />
                     ) : (
@@ -266,7 +270,7 @@ const CustomerReviewsPage = () => {
                       value={inputvalue}
                       onChange={(e) => setInputvalue(e?.target?.value)}
                       className="bg-white_A700 font-normal not-italic lg:pl-[46px] xl:pl-[53px] 2xl:pl-[60px] 3xl:pl-[72px] pl-[80px] lg:pr-[12px] xl:pr-[14px] 2xl:pr-[16px] 3xl:pr-[19px] pr-[22px] lg:py-[11px] xl:py-[13px] 2xl:py-[14px] 3xl:py-[17px] py-[19.545px] rounded-radius16 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 placeholder:text-gray_500 text-gray_500 text-left w-[100%]"
-                      name="Group203"
+                      name="Group204"
                       placeholder={`Search`}
                     ></Input>
                   </div>
@@ -618,15 +622,19 @@ const CustomerReviewsPage = () => {
                     </span>
                   </Text>
                   <Row className="items-center justify-between w-[19%]">
-                    <Button className="bg-transparent lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]">
-                      {""}
-                    </Button>
+                    <Image
+                      src={"images/img_chevrondown_14.svg"}
+                      className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                      alt="chevrondown"
+                    />
                     <Button className="bg-amber_600 font-normal lg:h-[30px] xl:h-[34px] 2xl:h-[38px] 3xl:h-[46px] h-[50px] leading-lh my-[1px] not-italic 3xl:pb-[10px] pb-[12px] lg:pb-[7px] xl:pb-[8px] 2xl:pb-[9px] lg:pl-[12px] xl:pl-[14px] 2xl:pl-[16px] 3xl:pl-[19px] pl-[22px] pt-[11px] lg:pt-[6px] xl:pt-[7px] 2xl:pt-[8px] 3xl:pt-[9px] rounded-radius16 text-amber_600 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left lg:w-[29px] xl:w-[33px] 2xl:w-[37px] 3xl:w-[45px] w-[50px]">{`1`}</Button>
                     <Button className="bg-amber_600 font-normal lg:h-[30px] xl:h-[35px] 2xl:h-[39px] 3xl:h-[46px] h-[51px] leading-lh not-italic lg:pl-[11px] xl:pl-[13px] 2xl:pl-[15px] 3xl:pl-[18px] pl-[20px] 3xl:py-[10px] py-[12px] lg:py-[7px] xl:py-[8px] 2xl:py-[9px] rounded-radius16 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 lg:w-[29px] xl:w-[34px] 2xl:w-[38px] 3xl:w-[45px] w-[51px]">{`2`}</Button>
                     <Button className="bg-amber_600 font-normal lg:h-[30px] xl:h-[35px] 2xl:h-[39px] 3xl:h-[46px] h-[51px] leading-lh not-italic lg:pl-[11px] xl:pl-[13px] 2xl:pl-[15px] 3xl:pl-[18px] pl-[20px] 3xl:py-[10px] py-[12px] lg:py-[7px] xl:py-[8px] 2xl:py-[9px] rounded-radius16 text-amber_600 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left lg:w-[29px] xl:w-[34px] 2xl:w-[38px] 3xl:w-[45px] w-[51px]">{`3`}</Button>
-                    <Button className="bg-transparent lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]">
-                      {""}
-                    </Button>
+                    <Image
+                      src={"images/img_chevrondown_15.svg"}
+                      className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                      alt="chevrondown"
+                    />
                   </Row>
                 </Row>
               </Column>

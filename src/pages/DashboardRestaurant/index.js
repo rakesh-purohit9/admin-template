@@ -62,14 +62,12 @@ ChartJS.register(
 const DashboardRestaurantPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate30 = () => navigate("/menu");
-  const handleNavigate21 = () => navigate("/ordersrestaurant");
-  const handleNavigate22 = () => navigate("/customerreviews");
-  const handleNavigate23 = () => navigate("/settingsrestaurant");
-  const handleNavigate24 = () => navigate("/");
-
-  const [inputvalue, setInputvalue] = React.useState("");
-  const [inputvalue1, setInputvalue1] = React.useState("");
+  const handleNavigate43 = () => navigate("/menu");
+  const handleNavigate34 = () => navigate("/ordersrestaurant");
+  const handleNavigate35 = () => navigate("/customerreviews");
+  const handleNavigate36 = () => navigate("/settingsrestaurant");
+  const handleNavigate37 = () => navigate("/");
+  const handleNavigate1 = () => navigate("/");
 
   return (
     <>
@@ -96,7 +94,7 @@ const DashboardRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate30}
+                  onClick={handleNavigate43}
                 >
                   <Image
                     src={"images/img_bill_8.svg"}
@@ -107,7 +105,7 @@ const DashboardRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate21}
+                  onClick={handleNavigate34}
                 >
                   <Image
                     src={"images/img_deliveryscoote_8.svg"}
@@ -118,7 +116,7 @@ const DashboardRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate22}
+                  onClick={handleNavigate35}
                 >
                   <Image
                     src={"images/img_review_8.svg"}
@@ -129,7 +127,7 @@ const DashboardRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate23}
+                  onClick={handleNavigate36}
                 >
                   <Image
                     src={"images/img_setting_8.svg"}
@@ -144,7 +142,7 @@ const DashboardRestaurantPage = () => {
                     <Image
                       src={"images/img_maskgroup_29.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate24}
+                      onClick={handleNavigate37}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -166,7 +164,10 @@ const DashboardRestaurantPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate1}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -184,7 +185,7 @@ const DashboardRestaurantPage = () => {
                 />
                 <Input
                   className="placeholder:bg-transparent bg-white_A700 border-0 font-normal not-italic lg:pl-[46px] xl:pl-[53px] 2xl:pl-[60px] 3xl:pl-[72px] pl-[80px] lg:py-[11px] xl:py-[13px] 2xl:py-[14px] 3xl:py-[17px] py-[19.545px] rounded-radius16 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 placeholder:text-gray_500 text-gray_500 text-left w-[100%]"
-                  name="Group151"
+                  name="Group152"
                   placeholder={`Search`}
                 ></Input>
               </div>
@@ -231,7 +232,14 @@ const DashboardRestaurantPage = () => {
                       </Row>
                     </Column>
                   </List>
-                  <Button className="bg-amber_600 font-medium lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] ml-[57.5px] lg:my-[15px] xl:my-[17px] 2xl:my-[19px] 3xl:my-[23px] my-[26.5px] rounded-bl-[16px] rounded-br-[0] rounded-tl-[16px] rounded-tr-[0] lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 w-[24%]">{`Withdraw`}</Button>
+                  <Row className="bg-amber_600 items-center justify-center lg:ml-[28px] xl:ml-[32px] 2xl:ml-[36px] 3xl:ml-[44px] ml-[49px] lg:my-[24px] xl:my-[28px] 2xl:my-[31px] 3xl:my-[37px] my-[42px] rounded-bl-[16px] rounded-br-[0] rounded-tl-[16px] rounded-tr-[0] w-[24%]">
+                    <Text className="font-medium lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] ml-[57.5px] lg:my-[15px] xl:my-[17px] 2xl:my-[19px] 3xl:my-[23px] my-[26.5px] lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 w-[auto]">{`Withdraw`}</Text>
+                    <Image
+                      src={"images/img_sent_1.svg"}
+                      className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] 2xl:ml-[10px] 3xl:ml-[12px] ml-[14px] lg:ml-[8px] xl:ml-[9px] lg:mr-[33px] xl:mr-[38px] 2xl:mr-[43px] 3xl:mr-[51px] mr-[57.5px] lg:my-[14px] xl:my-[16px] 2xl:my-[18px] 3xl:my-[21px] my-[24px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                      alt="Sent"
+                    />
+                  </Row>
                 </Row>
                 <Row className="font-inter items-center justify-between lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] mt-[32px] w-[100%]">
                   <Column className="bg-white_A700 items-center lg:py-[21px] xl:py-[24px] 2xl:py-[27px] 3xl:py-[33px] py-[37px] rounded-radius16 w-[53%]">
@@ -243,7 +251,7 @@ const DashboardRestaurantPage = () => {
                           <YAxis />
                           <RechartsTooltip />
                           <RechartsLegend />
-                          <Bar dataKey="c0" fill="#ffd966" />
+                          <Bar dataKey="c0" fill="#ff4d79" />
                         </BarChart>
                       </ResponsiveContainer>
                     </div>
@@ -287,7 +295,7 @@ const DashboardRestaurantPage = () => {
               <Stack className="lg:h-[243px] xl:h-[277px] 2xl:h-[312px] 3xl:h-[374px] h-[415px] w-[29%]">
                 <Row className="absolute bg-white_A700 items-center justify-start rounded-bl-[0] rounded-br-[0] rounded-tl-[16px] rounded-tr-[16px] top-[0] w-[100%]">
                   <Image
-                    src={"images/img_icon_15.svg"}
+                    src={"images/img_icon_21.svg"}
                     className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[17px] xl:my-[20px] 2xl:my-[22px] 3xl:my-[27px] my-[30.5px] object-contain lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
                     alt="icon"
                   />
@@ -298,7 +306,7 @@ const DashboardRestaurantPage = () => {
                 </Row>
                 <Row className="absolute bg-white_A700 items-center justify-start top-[25%] w-[100%]">
                   <Image
-                    src={"images/img_icon_16.svg"}
+                    src={"images/img_icon_22.svg"}
                     className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[17px] xl:my-[20px] 2xl:my-[22px] 3xl:my-[27px] my-[30.5px] object-contain lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
                     alt="icon"
                   />
@@ -309,7 +317,7 @@ const DashboardRestaurantPage = () => {
                 </Row>
                 <Row className="absolute bg-white_A700 bottom-[25%] items-center justify-start w-[100%]">
                   <Image
-                    src={"images/img_icon_17.svg"}
+                    src={"images/img_icon_23.svg"}
                     className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[17px] xl:my-[20px] 2xl:my-[22px] 3xl:my-[27px] my-[30.5px] object-contain lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
                     alt="icon"
                   />
@@ -320,7 +328,7 @@ const DashboardRestaurantPage = () => {
                 </Row>
                 <Row className="absolute bg-white_A700 bottom-[0] items-center justify-start rounded-bl-[16px] rounded-br-[16px] rounded-tl-[0] rounded-tr-[0] w-[100%]">
                   <Image
-                    src={"images/img_icon_18.svg"}
+                    src={"images/img_icon_24.svg"}
                     className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[17px] xl:my-[20px] 2xl:my-[22px] 3xl:my-[27px] my-[30.5px] object-contain lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
                     alt="icon"
                   />
@@ -344,7 +352,7 @@ const DashboardRestaurantPage = () => {
                     <SelectBox
                       className="bg-transparent border border-gray_500 border-solid font-normal not-italic xl:pl-[11px] 2xl:pl-[12px] 3xl:pl-[14px] pl-[16.5px] lg:pl-[9px] lg:pr-[39px] xl:pr-[44px] 2xl:pr-[50px] 3xl:pr-[60px] pr-[67.000059px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-left w-[100%]"
                       placeholderClassName=""
-                      name="Group152"
+                      name="Group153"
                       placeholder={`Select`}
                       isSearchable={true}
                       isMulti={false}
@@ -370,7 +378,7 @@ const DashboardRestaurantPage = () => {
                     </Row>
                     <div
                       className="lg:h-[5px] xl:h-[6px] 2xl:h-[7px] h-[8px] xl:mt-[2px] lg:mt-[2px] 3xl:mt-[3px] 2xl:mt-[3px] mt-[4px] overflow-hidden relative w-[100%]"
-                      name="Group161"
+                      name="Group162"
                     >
                       <div className="w-full h-full absolute bg-gray_500"></div>
                       <div
@@ -404,7 +412,7 @@ const DashboardRestaurantPage = () => {
                             <VictoryStack colorScale={"blue"}>
                               <VictoryArea
                                 data={VictoryAreaData[0]}
-                                style={{ data: { stroke: "#66ff66" } }}
+                                style={{ data: { stroke: "#ff99bb" } }}
                                 interpolation="natural"
                               />
 
@@ -453,6 +461,11 @@ const DashboardRestaurantPage = () => {
                     alt="Dots"
                   />
                 </Row>
+                <Image
+                  src={"images/img_circle.svg"}
+                  className="lg:h-[140px] xl:h-[161px] 2xl:h-[181px] 3xl:h-[217px] h-[240px] lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] mt-[32px] mx-[auto] object-contain lg:w-[140px] xl:w-[160px] 2xl:w-[180px] 3xl:w-[216px] w-[240px]"
+                  alt="circle"
+                />
                 <Column className="items-start lg:mt-[15px] xl:mt-[17px] 2xl:mt-[19px] 3xl:mt-[23px] mt-[26px] w-[100%]">
                   <Text className="font-normal lg:mx-[17px] xl:mx-[20px] 2xl:mx-[22px] 3xl:mx-[27px] mx-[30px] not-italic 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-gray_500 text-left w-[auto]">{`Legend`}</Text>
                 </Column>
@@ -460,7 +473,7 @@ const DashboardRestaurantPage = () => {
                   <CheckBox
                     className="font-normal lg:my-[1px] 3xl:my-[2px] 2xl:my-[2px] xl:my-[2px] my-[3px] not-italic text-bluegray_900 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-left w-[43%]"
                     inputClassName="2xl:h-[16px] 2xl:w-[15px] 3xl:h-[19px] 3xl:w-[18px] bg-amber_600 h-[21px] lg:h-[13px] lg:w-[12px] rounded-radius4 w-[21px] xl:h-[15px] xl:w-[14px] mr-[5px]"
-                    name="Group157"
+                    name="Group158"
                     label={`Asian Food (27%)`}
                   ></CheckBox>
                   <Text className="font-semibold text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-right w-[auto]">{`763`}</Text>
@@ -469,7 +482,7 @@ const DashboardRestaurantPage = () => {
                   <CheckBox
                     className="font-normal lg:my-[1px] 3xl:my-[2px] 2xl:my-[2px] xl:my-[2px] my-[3px] not-italic text-bluegray_900 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-left w-[41%]"
                     inputClassName="2xl:h-[16px] 2xl:w-[15px] 3xl:h-[19px] 3xl:w-[18px] bg-red_400 h-[21px] lg:h-[13px] lg:w-[12px] rounded-radius4 w-[21px] xl:h-[15px] xl:w-[14px] mr-[5px]"
-                    name="Group158"
+                    name="Group159"
                     label={`Fast Food (50%)`}
                   ></CheckBox>
                   <Text className="font-semibold text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-right w-[auto]">{`321`}</Text>
@@ -478,7 +491,7 @@ const DashboardRestaurantPage = () => {
                   <CheckBox
                     className="font-normal lg:my-[1px] 3xl:my-[2px] 2xl:my-[2px] xl:my-[2px] my-[3px] not-italic text-bluegray_900 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-left w-[48%]"
                     inputClassName="2xl:h-[16px] 2xl:w-[15px] 3xl:h-[19px] 3xl:w-[18px] bg-light_green_500 h-[21px] lg:h-[13px] lg:w-[12px] rounded-radius4 w-[21px] xl:h-[15px] xl:w-[14px] mr-[5px]"
-                    name="Group159"
+                    name="Group160"
                     label={`Western Food (23%)`}
                   ></CheckBox>
                   <Text className="font-semibold text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-right w-[auto]">{`69`}</Text>
@@ -546,84 +559,60 @@ const DashboardRestaurantPage = () => {
                       <Column className="items-start justify-start w-[100%]">
                         <Text className="font-normal mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] not-italic 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-gray_500 text-left w-[auto]">{`Completed Order`}</Text>
                         <Text className="font-bold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] lg:mt-[2px] 2xl:mt-[3px] xl:mt-[3px] 3xl:mt-[4px] mt-[5px] text-bluegray_900 lg:text-fs14 xl:text-fs16 2xl:text-fs18 3xl:text-fs21 text-fs24 text-left w-[auto]">{`932 Task`}</Text>
-                        <div className="2xl:mt-[12px] 3xl:mt-[14px] lg:mt-[9px] mt-[16px] w-[100%] xl:mt-[10px] input-wrap">
-                          <Image
-                            onClick={() => setInputvalue("")}
-                            src={
-                              inputvalue?.length
-                                ? "images/close4.svg"
-                                : "images/search.svg"
-                            }
-                            className="absolute cursor-pointer h-[20px] right-[22px] lg:h-[12px] lg:right-[12px] xl:h-[14px] xl:right-[14px] 2xl:h-[16px] 2xl:right-[16px] 3xl:h-[19px] 3xl:right-[19px] my-[auto] inset-y-[0]"
-                            alt="Vector"
+                        <div className="placeholder:bg-transparent bg-transparent border-0 lg:h-[38px] xl:h-[43px] 2xl:h-[49px] 3xl:h-[58px] h-[64px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] placeholder:text-bluegray_900 w-[100%]">
+                          <ResponsiveLine
+                            data={NivoLinData}
+                            margin={{
+                              top: 10,
+                              right: 10,
+                              bottom: 10,
+                              left: 10,
+                            }}
+                            xScale={{ type: "point" }}
+                            yScale={{
+                              type: "linear",
+                              min: "auto",
+                              max: "auto",
+                              stacked: true,
+                              reverse: false,
+                            }}
+                            colors={["#80e5ff", "#66ff66"]}
+                            colorBy="id"
+                            curve="natural"
+                            yFormat=" >-.2f"
+                            useMesh={true}
+                            legends={[
+                              {
+                                dataFrom: "keys",
+                                anchor: "bottom-right",
+                                direction: "column",
+                                justify: false,
+                                translateX: 120,
+                                itemsSpacing: 2,
+                                itemWidth: 100,
+                                itemHeight: 20,
+                              },
+                            ]}
                           />
-                          <div className="lg:h-[38px] xl:h-[43px] 2xl:h-[49px] 3xl:h-[58px] h-[64px] lg:pr-[525px] xl:pr-[600px] 2xl:pr-[675px] 3xl:pr-[810px] pr-[900.05px] placeholder:text-bluegray_900 w-[100%]">
-                            <ResponsiveLine
-                              data={NivoLinData}
-                              margin={{
-                                top: 10,
-                                right: 10,
-                                bottom: 10,
-                                left: 10,
-                              }}
-                              xScale={{ type: "point" }}
-                              yScale={{
-                                type: "linear",
-                                min: "auto",
-                                max: "auto",
-                                stacked: true,
-                                reverse: false,
-                              }}
-                              colors={["#ffd966", "#4da6ff"]}
-                              colorBy="id"
-                              curve="natural"
-                              yFormat=" >-.2f"
-                              useMesh={true}
-                              legends={[
-                                {
-                                  dataFrom: "keys",
-                                  anchor: "bottom-right",
-                                  direction: "column",
-                                  justify: false,
-                                  translateX: 120,
-                                  itemsSpacing: 2,
-                                  itemWidth: 100,
-                                  itemHeight: 20,
-                                },
-                              ]}
-                            />
-                          </div>
                         </div>
                       </Column>
                       <Column className="items-start justify-start lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] mt-[32px] w-[100%]">
                         <Text className="font-normal mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] not-italic 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-gray_500 text-left w-[auto]">{`Order Delivered`}</Text>
                         <Text className="font-bold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] lg:mt-[2px] 2xl:mt-[3px] xl:mt-[3px] 3xl:mt-[4px] mt-[5px] text-bluegray_900 lg:text-fs14 xl:text-fs16 2xl:text-fs18 3xl:text-fs21 text-fs24 text-left w-[auto]">{`932`}</Text>
-                        <div className="2xl:mt-[12px] 3xl:mt-[14px] lg:mt-[9px] mt-[16px] w-[100%] xl:mt-[10px] input-wrap">
-                          <Image
-                            onClick={() => setInputvalue1("")}
-                            src={
-                              inputvalue1?.length
-                                ? "images/close4.svg"
-                                : "images/search.svg"
-                            }
-                            className="absolute cursor-pointer h-[20px] right-[22px] lg:h-[12px] lg:right-[12px] xl:h-[14px] xl:right-[14px] 2xl:h-[16px] 2xl:right-[16px] 3xl:h-[19px] 3xl:right-[19px] my-[auto] inset-y-[0]"
-                            alt="Vector"
-                          />
-                          <div className="lg:h-[38px] xl:h-[43px] 2xl:h-[49px] 3xl:h-[58px] h-[64px] lg:pr-[525px] xl:pr-[600px] 2xl:pr-[675px] 3xl:pr-[810px] pr-[900.05px] placeholder:text-bluegray_900 w-[100%]">
-                            <VictoryChart theme={VictoryTheme.material}>
-                              <VictoryLine
-                                interpolation="natural"
-                                data={VictoryLineData[0]}
-                                style={{ data: { stroke: "#66ff66" } }}
-                              />
+                        <div className="placeholder:bg-transparent bg-transparent border-0 lg:h-[38px] xl:h-[43px] 2xl:h-[49px] 3xl:h-[58px] h-[64px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] placeholder:text-bluegray_900 w-[100%]">
+                          <VictoryChart theme={VictoryTheme.material}>
+                            <VictoryLine
+                              interpolation="natural"
+                              data={VictoryLineData[0]}
+                              style={{ data: { stroke: "#ffd966" } }}
+                            />
 
-                              <VictoryLine
-                                interpolation="natural"
-                                data={VictoryLineData[1]}
-                                style={{ data: { stroke: "#a3a3c2" } }}
-                              />
-                            </VictoryChart>
-                          </div>
+                            <VictoryLine
+                              interpolation="natural"
+                              data={VictoryLineData[1]}
+                              style={{ data: { stroke: "#bbbb77" } }}
+                            />
+                          </VictoryChart>
                         </div>
                       </Column>
                     </Column>

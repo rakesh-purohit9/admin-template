@@ -14,11 +14,12 @@ import { Line } from "components/Line";
 const MenuPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate25 = () => navigate("/dashboardrestaurant");
-  const handleNavigate16 = () => navigate("/ordersrestaurant");
-  const handleNavigate17 = () => navigate("/customerreviews");
-  const handleNavigate18 = () => navigate("/settingsrestaurant");
-  const handleNavigate19 = () => navigate("/");
+  const handleNavigate38 = () => navigate("/dashboardrestaurant");
+  const handleNavigate29 = () => navigate("/ordersrestaurant");
+  const handleNavigate30 = () => navigate("/customerreviews");
+  const handleNavigate31 = () => navigate("/settingsrestaurant");
+  const handleNavigate32 = () => navigate("/");
+  const handleNavigate2 = () => navigate("/");
 
   const [inputvalue, setInputvalue] = React.useState("");
 
@@ -39,7 +40,7 @@ const MenuPage = () => {
                 </Text>
                 <Row
                   className="common-pointer bg-amber_600 items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate25}
+                  onClick={handleNavigate38}
                 >
                   <Image
                     src={"images/img_restaurantloca_9.svg"}
@@ -58,7 +59,7 @@ const MenuPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate16}
+                  onClick={handleNavigate29}
                 >
                   <Image
                     src={"images/img_deliveryscoote_9.svg"}
@@ -69,7 +70,7 @@ const MenuPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate17}
+                  onClick={handleNavigate30}
                 >
                   <Image
                     src={"images/img_review_9.svg"}
@@ -80,7 +81,7 @@ const MenuPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate18}
+                  onClick={handleNavigate31}
                 >
                   <Image
                     src={"images/img_setting_9.svg"}
@@ -95,7 +96,7 @@ const MenuPage = () => {
                     <Image
                       src={"images/img_maskgroup_30.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate19}
+                      onClick={handleNavigate32}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -117,7 +118,10 @@ const MenuPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate2}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -143,8 +147,8 @@ const MenuPage = () => {
                 {inputvalue?.length > 0 ? (
                   <Image
                     onClick={() => setInputvalue("")}
-                    src={"images/close4.svg"}
-                    className="absolute cursor-pointer h-[20px] right-[22px] lg:h-[12px] lg:right-[12px] xl:h-[14px] xl:right-[14px] 2xl:h-[16px] 2xl:right-[16px] 3xl:h-[19px] 3xl:right-[19px] my-[auto] inset-y-[0]"
+                    src={"images/close2.svg"}
+                    className="absolute cursor-pointer h-[24px] right-[22px] lg:h-[14px] lg:right-[12px] xl:h-[17px] xl:right-[14px] 2xl:h-[19px] 2xl:right-[16px] 3xl:h-[22px] 3xl:right-[19px] my-[auto] inset-y-[0]"
                     alt="Vector"
                   />
                 ) : (
@@ -154,7 +158,7 @@ const MenuPage = () => {
                   value={inputvalue}
                   onChange={(e) => setInputvalue(e?.target?.value)}
                   className="bg-white_A700 font-normal not-italic lg:pl-[46px] xl:pl-[53px] 2xl:pl-[60px] 3xl:pl-[72px] pl-[80px] lg:pr-[12px] xl:pr-[14px] 2xl:pr-[16px] 3xl:pr-[19px] pr-[22px] lg:py-[11px] xl:py-[13px] 2xl:py-[14px] 3xl:py-[17px] py-[19.545px] rounded-radius16 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 placeholder:text-gray_500 text-gray_500 text-left w-[100%]"
-                  name="Group179"
+                  name="Group180"
                   placeholder={`Search`}
                 ></Input>
               </div>

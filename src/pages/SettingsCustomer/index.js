@@ -17,13 +17,14 @@ import { TextArea } from "components/TextArea";
 const SettingsCustomerPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate45 = () => navigate("/");
-  const handleNavigate35 = () => navigate("/foodorder");
-  const handleNavigate36 = () => navigate("/favoritemenu");
-  const handleNavigate37 = () => navigate("/chat");
-  const handleNavigate38 = () => navigate("/orderhistory");
-  const handleNavigate39 = () => navigate("/bills");
-  const handleNavigate29 = () => navigate("/dashboardrestaurant");
+  const handleNavigate58 = () => navigate("/");
+  const handleNavigate48 = () => navigate("/foodorder");
+  const handleNavigate49 = () => navigate("/favoritemenu");
+  const handleNavigate50 = () => navigate("/chat");
+  const handleNavigate51 = () => navigate("/orderhistory");
+  const handleNavigate52 = () => navigate("/bills");
+  const handleNavigate42 = () => navigate("/dashboardrestaurant");
+  const handleNavigate9 = () => navigate("/dashboardrestaurant");
 
   return (
     <>
@@ -43,7 +44,7 @@ const SettingsCustomerPage = () => {
                   </Text>
                   <Row
                     className="common-pointer items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                    onClick={handleNavigate45}
+                    onClick={handleNavigate58}
                   >
                     <Image
                       src={"images/img_restaurantloca_7.svg"}
@@ -54,7 +55,7 @@ const SettingsCustomerPage = () => {
                   </Row>
                   <Row
                     className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                    onClick={handleNavigate35}
+                    onClick={handleNavigate48}
                   >
                     <Image
                       src={"images/img_deliveryscoote_7.svg"}
@@ -65,7 +66,7 @@ const SettingsCustomerPage = () => {
                   </Row>
                   <Row
                     className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                    onClick={handleNavigate36}
+                    onClick={handleNavigate49}
                   >
                     <Image
                       src={"images/img_review_7.svg"}
@@ -76,7 +77,7 @@ const SettingsCustomerPage = () => {
                   </Row>
                   <Row
                     className="common-pointer bg-amber_600 items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                    onClick={handleNavigate37}
+                    onClick={handleNavigate50}
                   >
                     <Image
                       src={"images/img_orderdiscussio_7.svg"}
@@ -87,7 +88,7 @@ const SettingsCustomerPage = () => {
                   </Row>
                   <Row
                     className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                    onClick={handleNavigate38}
+                    onClick={handleNavigate51}
                   >
                     <Image
                       src={"images/img_24hourfoodde_7.svg"}
@@ -98,7 +99,7 @@ const SettingsCustomerPage = () => {
                   </Row>
                   <Row
                     className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                    onClick={handleNavigate39}
+                    onClick={handleNavigate52}
                   >
                     <Image
                       src={"images/img_bill_7.svg"}
@@ -121,7 +122,7 @@ const SettingsCustomerPage = () => {
                       <Image
                         src={"images/img_maskgroup_28.png"}
                         className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                        onClick={handleNavigate29}
+                        onClick={handleNavigate42}
                         alt="MaskGroup"
                       />
                       <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -143,7 +144,10 @@ const SettingsCustomerPage = () => {
                             </Text>
                           </Stack>
                         </Column>
-                        <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                        <Button
+                          className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                          onClick={handleNavigate9}
+                        >{`Upgrade`}</Button>
                       </Column>
                     </Stack>
                   </Stack>

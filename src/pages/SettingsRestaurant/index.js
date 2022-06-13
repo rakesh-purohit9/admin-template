@@ -19,11 +19,12 @@ import { TextArea } from "components/TextArea";
 const SettingsRestaurantPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate9 = () => navigate("/dashboardrestaurant");
-  const handleNavigate10 = () => navigate("/menu");
-  const handleNavigate2 = () => navigate("/ordersrestaurant");
-  const handleNavigate3 = () => navigate("/customerreviews");
-  const handleNavigate4 = () => navigate("/");
+  const handleNavigate22 = () => navigate("/dashboardrestaurant");
+  const handleNavigate23 = () => navigate("/menu");
+  const handleNavigate15 = () => navigate("/ordersrestaurant");
+  const handleNavigate16 = () => navigate("/customerreviews");
+  const handleNavigate17 = () => navigate("/");
+  const handleNavigate5 = () => navigate("/");
 
   return (
     <>
@@ -42,7 +43,7 @@ const SettingsRestaurantPage = () => {
                 </Text>
                 <Row
                   className="common-pointer bg-amber_600 items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate9}
+                  onClick={handleNavigate22}
                 >
                   <Image
                     src={"images/img_restaurantloca_12.svg"}
@@ -53,7 +54,7 @@ const SettingsRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate10}
+                  onClick={handleNavigate23}
                 >
                   <Image
                     src={"images/img_bill_12.svg"}
@@ -64,7 +65,7 @@ const SettingsRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate2}
+                  onClick={handleNavigate15}
                 >
                   <Image
                     src={"images/img_deliveryscoote_12.svg"}
@@ -75,7 +76,7 @@ const SettingsRestaurantPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate3}
+                  onClick={handleNavigate16}
                 >
                   <Image
                     src={"images/img_review_12.svg"}
@@ -98,7 +99,7 @@ const SettingsRestaurantPage = () => {
                     <Image
                       src={"images/img_maskgroup_35.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate4}
+                      onClick={handleNavigate17}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -120,7 +121,10 @@ const SettingsRestaurantPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate5}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -152,7 +156,7 @@ const SettingsRestaurantPage = () => {
                       >
                         <Row className="items-start justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] my-[16px] lg:my-[9px] w-[100%]">
                           <Image
-                            src={"images/img_icon_19.svg"}
+                            src={"images/img_icon_25.svg"}
                             className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:mb-[24px] xl:mb-[28px] 2xl:mb-[31px] 3xl:mb-[37px] mb-[42px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
                             alt="icon"
                           />
@@ -163,7 +167,7 @@ const SettingsRestaurantPage = () => {
                         </Row>
                         <Row className="items-start justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] my-[16px] lg:my-[9px] w-[100%]">
                           <Image
-                            src={"images/img_icon_20.svg"}
+                            src={"images/img_icon_26.svg"}
                             className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:mb-[24px] xl:mb-[28px] 2xl:mb-[31px] 3xl:mb-[37px] mb-[42px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
                             alt="icon"
                           />
@@ -174,7 +178,7 @@ const SettingsRestaurantPage = () => {
                         </Row>
                         <Row className="items-start justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] my-[16px] lg:my-[9px] w-[100%]">
                           <Image
-                            src={"images/img_icon_21.svg"}
+                            src={"images/img_icon_27.svg"}
                             className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:mb-[24px] xl:mb-[28px] 2xl:mb-[31px] 3xl:mb-[37px] mb-[42px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
                             alt="icon"
                           />
@@ -185,7 +189,7 @@ const SettingsRestaurantPage = () => {
                         </Row>
                         <Row className="items-start justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] my-[16px] lg:my-[9px] w-[100%]">
                           <Image
-                            src={"images/img_icon_22.svg"}
+                            src={"images/img_icon_28.svg"}
                             className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:mb-[24px] xl:mb-[28px] 2xl:mb-[31px] 3xl:mb-[37px] mb-[42px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
                             alt="icon"
                           />
@@ -196,7 +200,7 @@ const SettingsRestaurantPage = () => {
                         </Row>
                         <Row className="items-start justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] my-[16px] lg:my-[9px] w-[100%]">
                           <Image
-                            src={"images/img_icon_23.svg"}
+                            src={"images/img_icon_29.svg"}
                             className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:mb-[24px] xl:mb-[28px] 2xl:mb-[31px] 3xl:mb-[37px] mb-[42px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
                             alt="icon"
                           />
@@ -207,7 +211,7 @@ const SettingsRestaurantPage = () => {
                         </Row>
                         <Row className="items-start justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] my-[16px] lg:my-[9px] w-[100%]">
                           <Image
-                            src={"images/img_icon_24.svg"}
+                            src={"images/img_icon_30.svg"}
                             className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:mb-[24px] xl:mb-[28px] 2xl:mb-[31px] 3xl:mb-[37px] mb-[42px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
                             alt="icon"
                           />

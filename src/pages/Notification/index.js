@@ -16,14 +16,15 @@ import { List } from "components/List";
 const NotificationPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate56 = () => navigate("/");
-  const handleNavigate57 = () => navigate("/foodorder");
-  const handleNavigate46 = () => navigate("/favoritemenu");
-  const handleNavigate47 = () => navigate("/chat");
-  const handleNavigate48 = () => navigate("/orderhistory");
-  const handleNavigate49 = () => navigate("/bills");
-  const handleNavigate50 = () => navigate("/settingscustomer");
-  const handleNavigate27 = () => navigate("/dashboardrestaurant");
+  const handleNavigate69 = () => navigate("/");
+  const handleNavigate70 = () => navigate("/foodorder");
+  const handleNavigate59 = () => navigate("/favoritemenu");
+  const handleNavigate60 = () => navigate("/chat");
+  const handleNavigate61 = () => navigate("/orderhistory");
+  const handleNavigate62 = () => navigate("/bills");
+  const handleNavigate63 = () => navigate("/settingscustomer");
+  const handleNavigate40 = () => navigate("/dashboardrestaurant");
+  const handleNavigate7 = () => navigate("/dashboardrestaurant");
 
   return (
     <>
@@ -42,7 +43,7 @@ const NotificationPage = () => {
                 </Text>
                 <Row
                   className="common-pointer items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate56}
+                  onClick={handleNavigate69}
                 >
                   <Image
                     src={"images/img_restaurantloca_5.svg"}
@@ -53,7 +54,7 @@ const NotificationPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate57}
+                  onClick={handleNavigate70}
                 >
                   <Image
                     src={"images/img_deliveryscoote_5.svg"}
@@ -64,7 +65,7 @@ const NotificationPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate46}
+                  onClick={handleNavigate59}
                 >
                   <Image
                     src={"images/img_review_5.svg"}
@@ -75,7 +76,7 @@ const NotificationPage = () => {
                 </Row>
                 <Row
                   className="common-pointer bg-amber_600 items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate47}
+                  onClick={handleNavigate60}
                 >
                   <Image
                     src={"images/img_orderdiscussio_5.svg"}
@@ -86,7 +87,7 @@ const NotificationPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate48}
+                  onClick={handleNavigate61}
                 >
                   <Image
                     src={"images/img_24hourfoodde_5.svg"}
@@ -97,7 +98,7 @@ const NotificationPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate49}
+                  onClick={handleNavigate62}
                 >
                   <Image
                     src={"images/img_bill_5.svg"}
@@ -108,7 +109,7 @@ const NotificationPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate50}
+                  onClick={handleNavigate63}
                 >
                   <Image
                     src={"images/img_setting_5.svg"}
@@ -123,7 +124,7 @@ const NotificationPage = () => {
                     <Image
                       src={"images/img_maskgroup_24.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate27}
+                      onClick={handleNavigate40}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -145,7 +146,10 @@ const NotificationPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate7}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>

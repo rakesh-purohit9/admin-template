@@ -7,24 +7,23 @@ import { Text } from "components/Text";
 import { Image } from "components/Image";
 import { Stack } from "components/Stack";
 import { Button } from "components/Button";
-import { Input } from "components/Input";
 import { List } from "components/List";
 import { Line } from "components/Line";
 import { CheckBox } from "components/CheckBox";
 import { FloatingInput } from "components/FloatingInput";
+import { Input } from "components/Input";
 
 const ChatPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate67 = () => navigate("/");
-  const handleNavigate68 = () => navigate("/foodorder");
-  const handleNavigate58 = () => navigate("/favoritemenu");
-  const handleNavigate59 = () => navigate("/orderhistory");
-  const handleNavigate60 = () => navigate("/bills");
-  const handleNavigate61 = () => navigate("/settingscustomer");
-  const handleNavigate31 = () => navigate("/dashboardrestaurant");
-
-  const [inputvalue, setInputvalue] = React.useState("");
+  const handleNavigate80 = () => navigate("/");
+  const handleNavigate81 = () => navigate("/foodorder");
+  const handleNavigate71 = () => navigate("/favoritemenu");
+  const handleNavigate72 = () => navigate("/orderhistory");
+  const handleNavigate73 = () => navigate("/bills");
+  const handleNavigate74 = () => navigate("/settingscustomer");
+  const handleNavigate44 = () => navigate("/dashboardrestaurant");
+  const handleNavigate13 = () => navigate("/dashboardrestaurant");
 
   return (
     <>
@@ -43,7 +42,7 @@ const ChatPage = () => {
                 </Text>
                 <Row
                   className="common-pointer items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate67}
+                  onClick={handleNavigate80}
                 >
                   <Image
                     src={"images/img_restaurantloca_3.svg"}
@@ -54,7 +53,7 @@ const ChatPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate68}
+                  onClick={handleNavigate81}
                 >
                   <Image
                     src={"images/img_deliveryscoote_3.svg"}
@@ -65,7 +64,7 @@ const ChatPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate58}
+                  onClick={handleNavigate71}
                 >
                   <Image
                     src={"images/img_review_3.svg"}
@@ -84,7 +83,7 @@ const ChatPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate59}
+                  onClick={handleNavigate72}
                 >
                   <Image
                     src={"images/img_24hourfoodde_3.svg"}
@@ -95,7 +94,7 @@ const ChatPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate60}
+                  onClick={handleNavigate73}
                 >
                   <Image
                     src={"images/img_bill_3.svg"}
@@ -106,7 +105,7 @@ const ChatPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate61}
+                  onClick={handleNavigate74}
                 >
                   <Image
                     src={"images/img_setting_3.svg"}
@@ -121,7 +120,7 @@ const ChatPage = () => {
                     <Image
                       src={"images/img_maskgroup_22.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate31}
+                      onClick={handleNavigate44}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -143,7 +142,10 @@ const ChatPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate13}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -163,25 +165,16 @@ const ChatPage = () => {
               <Column className="bg-white_A700 items-start rounded-radius16 w-[34%]">
                 <Column className="lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] mt-[32px] w-[100%]">
                   <Row className="items-center justify-start w-[100%]">
-                    <div className="2xl:ml-[24px] 3xl:ml-[28px] lg:ml-[18px] ml-[32px] w-[71%] xl:ml-[21px] input-wrap">
-                      <Image
-                        onClick={() => setInputvalue("")}
-                        src={
-                          inputvalue?.length
-                            ? "images/close.svg"
-                            : "images/img_magnifier.svg"
-                        }
-                        className="absolute cursor-pointer h-[32px] right-[0] lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] my-[auto] inset-y-[0]"
-                        alt="magnifier"
-                      />
-                      <Input
-                        value={inputvalue}
-                        onChange={(e) => setInputvalue(e?.target?.value)}
-                        className="bg-gray_100 lg:pr-[209px] xl:pr-[239px] 2xl:pr-[269px] 3xl:pr-[323px] pr-[359px] rounded-radius16 w-[100%]"
-                        name="CustomRectangle"
-                        placeholder={""}
-                      ></Input>
-                    </div>
+                    <Column className="bg-gray_100 items-center lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] rounded-radius16 w-[71%]">
+                      <Row className="items-center justify-start 3xl:mr-[114px] mr-[127px] lg:mr-[74px] xl:mr-[84px] 2xl:mr-[95px] rounded-radius22 w-[65%]">
+                        <Image
+                          src={"images/img_magnifier.svg"}
+                          className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] 2xl:my-[10px] 3xl:my-[12px] my-[14px] lg:my-[8px] xl:my-[9px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                          alt="magnifier"
+                        />
+                        <Text className="font-normal xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] ml-[16px] lg:ml-[9px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[14px] my-[16.5px] lg:my-[9px] not-italic lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-gray_500 text-left w-[auto]">{`Search here...`}</Text>
+                      </Row>
+                    </Column>
                     <Image
                       src={"images/img_addbutton.svg"}
                       className="lg:h-[35px] xl:h-[41px] 2xl:h-[46px] 3xl:h-[55px] h-[60px] lg:ml-[14px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] ml-[24px] object-contain rounded-radius16 lg:w-[35px] xl:w-[40px] 2xl:w-[45px] 3xl:w-[54px] w-[60px]"
@@ -408,7 +401,14 @@ application. Thank you`}
                     className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[14px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] ml-[24px] lg:my-[16px] xl:my-[18px] 2xl:my-[21px] 3xl:my-[25px] my-[28px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
                     alt="Dots"
                   />
-                  <Button className="bg-amber_600 font-semibold lg:ml-[14px] xl:ml-[17px] 2xl:ml-[19px] 3xl:ml-[22px] ml-[25.5px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[14px] my-[16.5px] lg:my-[9px] rounded-radius16 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 w-[15%]">{`Send`}</Button>
+                  <Row className="bg-amber_600 items-center justify-center lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] my-[10px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[9px] rounded-radius16 w-[15%]">
+                    <Text className="font-semibold lg:ml-[14px] xl:ml-[17px] 2xl:ml-[19px] 3xl:ml-[22px] ml-[25.5px] xl:my-[11px] 2xl:my-[12px] 3xl:my-[14px] my-[16.5px] lg:my-[9px] lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 w-[auto]">{`Send`}</Text>
+                    <Image
+                      src={"images/img_sent.svg"}
+                      className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] ml-[8px] lg:mr-[14px] xl:mr-[17px] 2xl:mr-[19px] 3xl:mr-[22px] mr-[25.5px] lg:my-[10px] xl:my-[12px] 2xl:my-[13px] 3xl:my-[16px] my-[18px] object-contain lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
+                      alt="Sent"
+                    />
+                  </Row>
                 </Row>
               </Column>
             </Row>

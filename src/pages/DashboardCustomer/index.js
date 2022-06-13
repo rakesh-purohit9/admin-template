@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
+import SettingsModalModal from "modals/SettingsModal";
 import { Column } from "components/Column";
 import { Row } from "components/Row";
 import { Text } from "components/Text";
@@ -13,16 +14,26 @@ import { RatingBar } from "components/RatingBar";
 import { Line } from "components/Line";
 
 const DashboardCustomerPage = () => {
+  const [isOpenSettingsModalModal, setSettingsModalModal] =
+    React.useState(false);
+
   const navigate = useNavigate();
 
-  const handleNavigate82 = () => navigate("/foodorder");
-  const handleNavigate83 = () => navigate("/favoritemenu");
-  const handleNavigate79 = () => navigate("/chat");
-  const handleNavigate80 = () => navigate("/orderhistory");
-  const handleNavigate81 = () => navigate("/bills");
-  const handleNavigate74 = () => navigate("/settingscustomer");
-  const handleNavigate34 = () => navigate("/dashboardrestaurant");
-  const handleNavigate1 = () => navigate("/foodorder");
+  const handleNavigate95 = () => navigate("/foodorder");
+  const handleNavigate96 = () => navigate("/favoritemenu");
+  const handleNavigate92 = () => navigate("/chat");
+  const handleNavigate93 = () => navigate("/orderhistory");
+  const handleNavigate94 = () => navigate("/bills");
+  const handleNavigate87 = () => navigate("/settingscustomer");
+  const handleNavigate47 = () => navigate("/dashboardrestaurant");
+  const handleNavigate10 = () => navigate("/dashboardrestaurant");
+  const handleNavigate14 = () => navigate("/foodorder");
+  const handleOpenSettingsModalModal = () => {
+    setSettingsModalModal(true);
+  };
+  const handleCloseSettingsModalModal = () => {
+    setSettingsModalModal(false);
+  };
 
   return (
     <>
@@ -49,7 +60,7 @@ const DashboardCustomerPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate82}
+                  onClick={handleNavigate95}
                 >
                   <Image
                     src={"images/img_deliveryscoote.svg"}
@@ -60,7 +71,7 @@ const DashboardCustomerPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate83}
+                  onClick={handleNavigate96}
                 >
                   <Image
                     src={"images/img_review.svg"}
@@ -71,7 +82,7 @@ const DashboardCustomerPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate79}
+                  onClick={handleNavigate92}
                 >
                   <Image
                     src={"images/img_orderdiscussio.svg"}
@@ -82,7 +93,7 @@ const DashboardCustomerPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate80}
+                  onClick={handleNavigate93}
                 >
                   <Image
                     src={"images/img_24hourfoodde.svg"}
@@ -93,7 +104,7 @@ const DashboardCustomerPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate81}
+                  onClick={handleNavigate94}
                 >
                   <Image
                     src={"images/img_bill.svg"}
@@ -104,7 +115,7 @@ const DashboardCustomerPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate74}
+                  onClick={handleNavigate87}
                 >
                   <Image
                     src={"images/img_setting.svg"}
@@ -119,7 +130,7 @@ const DashboardCustomerPage = () => {
                     <Image
                       src={"images/img_maskgroup.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate34}
+                      onClick={handleNavigate47}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -141,7 +152,10 @@ const DashboardCustomerPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate10}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -173,7 +187,7 @@ const DashboardCustomerPage = () => {
               <Column className="absolute h-[max-content] inset-y-[0] items-start justify-start left-[5%] my-[auto] w-[46%]">
                 <Text
                   className="common-pointer font-bold leading-lh mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] lg:text-fs18 xl:text-fs21 2xl:text-fs24 3xl:text-fs28 text-fs32 text-left text-white_A700 w-[74%]"
-                  onClick={handleNavigate1}
+                  onClick={handleNavigate14}
                 >
                   {
                     <>
@@ -708,14 +722,34 @@ const DashboardCustomerPage = () => {
                   </span>
                 </Text>
               </Row>
-              <Button className="bg-gray_100 border border-amber_600 border-solid lg:mt-[23px] xl:mt-[26px] 2xl:mt-[30px] 3xl:mt-[36px] mt-[40px] mx-[auto] rounded-radius16 w-[82%]">
-                {""}
-              </Button>
+              <Row
+                className="common-pointer bg-gray_100 border border-amber_600 border-solid items-center justify-center lg:mt-[23px] xl:mt-[26px] 2xl:mt-[30px] 3xl:mt-[36px] mt-[40px] mx-[auto] rounded-radius16 w-[82%]"
+                onClick={handleOpenSettingsModalModal}
+              >
+                <Image
+                  src={"images/img_icon_2.svg"}
+                  className="lg:h-[24px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] h-[40px] 3xl:my-[10px] my-[12px] lg:my-[7px] xl:my-[8px] 2xl:my-[9px] object-contain lg:w-[23px] xl:w-[26px] 2xl:w-[30px] 3xl:w-[36px] w-[40px]"
+                  alt="icon"
+                />
+                <Text className="font-medium lg:ml-[14px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] ml-[24px] lg:my-[12px] xl:my-[14px] 2xl:my-[16px] 3xl:my-[19px] my-[21.5px] text-bluegray_900 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-left w-[auto]">{`Have a coupon code?`}</Text>
+                <Image
+                  src={"images/img_chevrondown_3.svg"}
+                  className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:ml-[14px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] ml-[24px] xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] my-[16px] lg:my-[9px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                  alt="chevrondown"
+                />
+              </Row>
               <Button className="bg-amber_600 font-medium lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] mt-[32px] mx-[auto] lg:py-[11px] xl:py-[13px] 2xl:py-[15px] 3xl:py-[18px] py-[20.045px] rounded-radius16 text-center lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-white_A700 w-[82%]">{`Checkout`}</Button>
             </Column>
           </Column>
         </Row>
       </Column>
+
+      {isOpenSettingsModalModal ? (
+        <SettingsModalModal
+          isOpen={isOpenSettingsModalModal}
+          onRequestClose={handleCloseSettingsModalModal}
+        />
+      ) : null}
     </>
   );
 };

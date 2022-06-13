@@ -16,13 +16,14 @@ import { List } from "components/List";
 const BillsPage = () => {
   const navigate = useNavigate();
 
-  const handleNavigate51 = () => navigate("/");
-  const handleNavigate40 = () => navigate("/foodorder");
-  const handleNavigate41 = () => navigate("/favoritemenu");
-  const handleNavigate42 = () => navigate("/chat");
-  const handleNavigate43 = () => navigate("/orderhistory");
-  const handleNavigate44 = () => navigate("/settingscustomer");
-  const handleNavigate28 = () => navigate("/dashboardrestaurant");
+  const handleNavigate64 = () => navigate("/");
+  const handleNavigate53 = () => navigate("/foodorder");
+  const handleNavigate54 = () => navigate("/favoritemenu");
+  const handleNavigate55 = () => navigate("/chat");
+  const handleNavigate56 = () => navigate("/orderhistory");
+  const handleNavigate57 = () => navigate("/settingscustomer");
+  const handleNavigate41 = () => navigate("/dashboardrestaurant");
+  const handleNavigate8 = () => navigate("/dashboardrestaurant");
 
   const [inputvalue, setInputvalue] = React.useState("");
 
@@ -43,7 +44,7 @@ const BillsPage = () => {
                 </Text>
                 <Row
                   className="common-pointer items-center justify-start lg:mt-[36px] xl:mt-[41px] 2xl:mt-[46px] 3xl:mt-[55px] mt-[62px] rounded-radius16 shadow-bs w-[100%]"
-                  onClick={handleNavigate51}
+                  onClick={handleNavigate64}
                 >
                   <Image
                     src={"images/img_restaurantloca_6.svg"}
@@ -54,7 +55,7 @@ const BillsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate40}
+                  onClick={handleNavigate53}
                 >
                   <Image
                     src={"images/img_deliveryscoote_6.svg"}
@@ -65,7 +66,7 @@ const BillsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate41}
+                  onClick={handleNavigate54}
                 >
                   <Image
                     src={"images/img_review_6.svg"}
@@ -76,7 +77,7 @@ const BillsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer bg-amber_600 items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate42}
+                  onClick={handleNavigate55}
                 >
                   <Image
                     src={"images/img_orderdiscussio_6.svg"}
@@ -87,7 +88,7 @@ const BillsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate43}
+                  onClick={handleNavigate56}
                 >
                   <Image
                     src={"images/img_24hourfoodde_6.svg"}
@@ -106,7 +107,7 @@ const BillsPage = () => {
                 </Row>
                 <Row
                   className="common-pointer items-center justify-start xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] rounded-radius20 w-[100%]"
-                  onClick={handleNavigate44}
+                  onClick={handleNavigate57}
                 >
                   <Image
                     src={"images/img_setting_6.svg"}
@@ -121,7 +122,7 @@ const BillsPage = () => {
                     <Image
                       src={"images/img_maskgroup_25.png"}
                       className="common-pointer absolute lg:h-[118px] xl:h-[135px] 2xl:h-[152px] 3xl:h-[182px] h-[202px] inset-[0] object-cover w-[100%]"
-                      onClick={handleNavigate28}
+                      onClick={handleNavigate41}
                       alt="MaskGroup"
                     />
                     <Column className="absolute items-start justify-start right-[6%] top-[11%] w-[82%]">
@@ -143,7 +144,10 @@ const BillsPage = () => {
                           </Text>
                         </Stack>
                       </Column>
-                      <Button className="bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]">{`Upgrade`}</Button>
+                      <Button
+                        className="common-pointer bg-white_A700 font-semibold mr-[10px] lg:mr-[5px] xl:mr-[6px] 2xl:mr-[7px] 3xl:mr-[9px] xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] mt-[16px] lg:mt-[9px] py-[10.705px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] 3xl:py-[9px] rounded-radius8 text-bluegray_900 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 w-[52%]"
+                        onClick={handleNavigate8}
+                      >{`Upgrade`}</Button>
                     </Column>
                   </Stack>
                 </Stack>
@@ -169,7 +173,7 @@ const BillsPage = () => {
                 {inputvalue?.length > 0 ? (
                   <Image
                     onClick={() => setInputvalue("")}
-                    src={"images/close2.svg"}
+                    src={"images/close1.svg"}
                     className="absolute cursor-pointer h-[24px] right-[22px] lg:h-[14px] lg:right-[12px] xl:h-[17px] xl:right-[14px] 2xl:h-[19px] 2xl:right-[16px] 3xl:h-[22px] 3xl:right-[19px] my-[auto] inset-y-[0]"
                     alt="Vector"
                   />
@@ -226,12 +230,7 @@ const BillsPage = () => {
                 orientation="vertical"
               >
                 <Row className="bg-white_A700 items-center justify-start my-[0] rounded-radius1 w-[100%]">
-                  <CheckBox
-                    className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                    inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] border-bw3 border-gray_300 border-solid h-[24px] lg:h-[14px] lg:w-[14px] rounded-radius4 w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                    name="square"
-                    label={""}
-                  ></CheckBox>
+                  <div className="border-bw3 border-gray_300 border-solid lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"></div>
                   <Row className="items-start justify-start lg:mb-[13px] xl:mb-[15px] 2xl:mb-[17px] 3xl:mb-[20px] mb-[23px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] lg:mt-[16px] xl:mt-[19px] 2xl:mt-[21px] 3xl:mt-[26px] mt-[29px] w-[43%]">
                     <Text className="font-medium 2xl:my-[10px] 3xl:my-[12px] my-[13.5px] lg:my-[7px] xl:my-[9px] text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left w-[auto]">{`Order #1`}</Text>
                     <Button className="bg-light_green_500_26 border border-light_green_500 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[1px] 3xl:my-[2px] 2xl:my-[2px] xl:my-[2px] my-[3px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-light_green_500 w-[24%]">{`Completed`}</Button>
@@ -257,9 +256,11 @@ const BillsPage = () => {
                     </Text>
                     <Text className="font-medium lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left w-[auto]">{`Cash`}</Text>
                   </Row>
-                  <Button className="bg-transparent lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_dropdown.svg"}
+                    className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] object-contain rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
+                    alt="dropdown"
+                  />
                 </Row>
                 <Row className="bg-amber_600 items-center justify-start my-[0] w-[100%]">
                   <Row className="items-center justify-between lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[15px] xl:my-[17px] 2xl:my-[19px] 3xl:my-[23px] my-[26px] w-[47%]">
@@ -292,9 +293,11 @@ const BillsPage = () => {
                     </Text>
                     <Text className="font-medium lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 w-[auto]">{`Cash`}</Text>
                   </Row>
-                  <Button className="bg-transparent lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_dropdown_1.svg"}
+                    className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] object-contain rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
+                    alt="dropdown"
+                  />
                 </Row>
               </List>
               <Row className="bg-white_A700 items-start justify-start shadow-bs3 w-[100%]">
@@ -422,12 +425,7 @@ const BillsPage = () => {
                 orientation="vertical"
               >
                 <Row className="bg-white_A700 items-center justify-start my-[0] rounded-radius1 w-[100%]">
-                  <CheckBox
-                    className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                    inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] border-bw3 border-gray_300 border-solid h-[24px] lg:h-[14px] lg:w-[14px] rounded-radius4 w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                    name="square"
-                    label={""}
-                  ></CheckBox>
+                  <div className="border-bw3 border-gray_300 border-solid lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"></div>
                   <Row className="items-start justify-start lg:mb-[13px] xl:mb-[15px] 2xl:mb-[17px] 3xl:mb-[20px] mb-[23px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] lg:mt-[16px] xl:mt-[19px] 2xl:mt-[21px] 3xl:mt-[26px] mt-[29px] w-[43%]">
                     <Text className="font-medium 2xl:my-[10px] 3xl:my-[12px] my-[13.5px] lg:my-[7px] xl:my-[9px] text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left w-[auto]">{`Order #1`}</Text>
                     <Button className="bg-light_green_500_26 border border-light_green_500 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[1px] 3xl:my-[2px] 2xl:my-[2px] xl:my-[2px] my-[3px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-light_green_500 w-[24%]">{`Completed`}</Button>
@@ -453,17 +451,14 @@ const BillsPage = () => {
                     </Text>
                     <Text className="font-medium lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left w-[auto]">{`Cash`}</Text>
                   </Row>
-                  <Button className="bg-transparent lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_dropdown_2.svg"}
+                    className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] object-contain rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
+                    alt="dropdown"
+                  />
                 </Row>
                 <Row className="bg-white_A700 items-center justify-start my-[0] rounded-radius1 w-[100%]">
-                  <CheckBox
-                    className="lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"
-                    inputClassName="2xl:h-[19px] 2xl:w-[18px] 3xl:h-[22px] 3xl:w-[21px] border-bw3 border-gray_300 border-solid h-[24px] lg:h-[14px] lg:w-[14px] rounded-radius4 w-[24px] xl:h-[17px] xl:w-[16px] mr-[5px]"
-                    name="square"
-                    label={""}
-                  ></CheckBox>
+                  <div className="border-bw3 border-gray_300 border-solid lg:h-[14px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] h-[24px] lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] ml-[32px] lg:my-[23px] xl:my-[27px] 2xl:my-[30px] 3xl:my-[36px] my-[41px] rounded-radius4 lg:w-[14px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px] w-[24px]"></div>
                   <Row className="items-start justify-start lg:mb-[13px] xl:mb-[15px] 2xl:mb-[17px] 3xl:mb-[20px] mb-[23px] lg:ml-[17px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] ml-[30px] lg:mt-[16px] xl:mt-[19px] 2xl:mt-[21px] 3xl:mt-[26px] mt-[29px] w-[43%]">
                     <Text className="font-medium 2xl:my-[10px] 3xl:my-[12px] my-[13.5px] lg:my-[7px] xl:my-[9px] text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left w-[auto]">{`Order #1`}</Text>
                     <Button className="bg-light_green_500_26 border border-light_green_500 border-solid font-semibold lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] lg:my-[1px] 3xl:my-[2px] 2xl:my-[2px] xl:my-[2px] my-[3px] 2xl:py-[11px] 3xl:py-[13px] py-[14.705px] lg:py-[8px] xl:py-[9px] rounded-radius16 text-center 2xl:text-fs10 3xl:text-fs12 text-fs14 lg:text-fs8 xl:text-fs9 text-light_green_500 w-[24%]">{`Completed`}</Button>
@@ -489,9 +484,11 @@ const BillsPage = () => {
                     </Text>
                     <Text className="font-medium lg:ml-[46px] xl:ml-[53px] 2xl:ml-[60px] 3xl:ml-[72px] ml-[80px] text-bluegray_900 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left w-[auto]">{`Cash`}</Text>
                   </Row>
-                  <Button className="bg-transparent lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_dropdown_3.svg"}
+                    className="lg:h-[28px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px] h-[48px] lg:ml-[103px] xl:ml-[118px] 2xl:ml-[133px] 3xl:ml-[160px] ml-[178px] lg:my-[16px] xl:my-[19px] 2xl:my-[21px] 3xl:my-[26px] my-[29px] object-contain rounded-radius16 lg:w-[28px] xl:w-[32px] 2xl:w-[36px] 3xl:w-[43px] w-[48px]"
+                    alt="dropdown"
+                  />
                 </Row>
               </List>
               <Row className="items-center justify-between lg:mb-[18px] xl:mb-[21px] 2xl:mb-[24px] 3xl:mb-[28px] mb-[32px] lg:mt-[23px] xl:mt-[26px] 2xl:mt-[30px] 3xl:mt-[36px] mt-[40px] mx-[auto] w-[95%]">
@@ -516,15 +513,19 @@ const BillsPage = () => {
                   </span>
                 </Text>
                 <Row className="items-center justify-between w-[20%]">
-                  <Button className="bg-transparent lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_chevrondown_8.svg"}
+                    className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                    alt="chevrondown"
+                  />
                   <Button className="bg-amber_600 font-normal lg:h-[30px] xl:h-[34px] 2xl:h-[38px] 3xl:h-[46px] h-[50px] leading-lh my-[1px] not-italic 3xl:pb-[10px] pb-[12px] lg:pb-[7px] xl:pb-[8px] 2xl:pb-[9px] lg:pl-[12px] xl:pl-[14px] 2xl:pl-[16px] 3xl:pl-[19px] pl-[22px] pt-[11px] lg:pt-[6px] xl:pt-[7px] 2xl:pt-[8px] 3xl:pt-[9px] rounded-radius16 text-amber_600 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left lg:w-[29px] xl:w-[33px] 2xl:w-[37px] 3xl:w-[45px] w-[50px]">{`1`}</Button>
                   <Button className="bg-amber_600 font-normal lg:h-[30px] xl:h-[35px] 2xl:h-[39px] 3xl:h-[46px] h-[51px] leading-lh not-italic lg:pl-[11px] xl:pl-[13px] 2xl:pl-[15px] 3xl:pl-[18px] pl-[20px] 3xl:py-[10px] py-[12px] lg:py-[7px] xl:py-[8px] 2xl:py-[9px] rounded-radius16 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left text-white_A700 lg:w-[29px] xl:w-[34px] 2xl:w-[38px] 3xl:w-[45px] w-[51px]">{`2`}</Button>
                   <Button className="bg-deep_orange_400_19 font-normal lg:h-[30px] xl:h-[35px] 2xl:h-[39px] 3xl:h-[46px] h-[51px] leading-lh not-italic lg:pl-[11px] xl:pl-[13px] 2xl:pl-[15px] 3xl:pl-[18px] pl-[20px] 3xl:py-[10px] py-[12px] lg:py-[7px] xl:py-[8px] 2xl:py-[9px] rounded-radius16 text-amber_600 lg:text-fs10 xl:text-fs12 2xl:text-fs13 3xl:text-fs16 text-fs18 text-left lg:w-[29px] xl:w-[34px] 2xl:w-[38px] 3xl:w-[45px] w-[51px]">{`3`}</Button>
-                  <Button className="bg-transparent lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]">
-                    {""}
-                  </Button>
+                  <Image
+                    src={"images/img_chevrondown_9.svg"}
+                    className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] h-[32px] lg:my-[5px] xl:my-[6px] 2xl:my-[7px] 3xl:my-[8px] my-[9.5px] object-contain lg:w-[18px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px] w-[32px]"
+                    alt="chevrondown"
+                  />
                 </Row>
               </Row>
             </Column>
